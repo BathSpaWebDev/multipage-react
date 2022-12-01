@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+.App {
+  text-align: center;
+}
+body {
+   margin: 0;
+}
+
+.main-layout {
+  background-color:$lightColour;
+  height: 100vh;
+
+  /* dark mode styles */
+  &.dark {
+    background-color: $darkColour;
+    nav {
+      ul {
+        li {
+          a {
+            color: $lightColour;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  /* light mode nav styles */
+  nav {
+    ul {
+      margin:0;
+      list-style: none;
+      li {
+        a {
+          color: #444;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
